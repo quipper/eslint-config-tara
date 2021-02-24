@@ -13,6 +13,12 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "off",
     "import/extensions": "off",
     "import/no-unresolved": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 120,
+      }
+    ]
   },
   "extends": [
     "eslint:recommended",
