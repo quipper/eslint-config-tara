@@ -11,8 +11,8 @@ module.exports = {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-unused-vars": ["off", { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }],
-    "no-unused-vars": ["off", { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }],
+    "@typescript-eslint/no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }],
+    'no-unused-vars': "off",
     "import/extensions": "off",
     "import/no-unresolved": "off",
     "prettier/prettier": [
