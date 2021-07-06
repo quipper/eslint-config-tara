@@ -15,6 +15,7 @@ module.exports = {
     'no-unused-vars': "off",
     "import/extensions": "off",
     "import/no-unresolved": "off",
+    'import/prefer-default-export': 'off',
     "prettier/prettier": [
       "error",
       {
@@ -22,6 +23,15 @@ module.exports = {
       }
     ]
   },
+  "overrides": [
+    {
+      files: ['**/*'],
+      excludedFiles: ['**/*.d.ts'],
+      rules: {
+        'import/no-default-export': 'error',
+      },
+    },
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
