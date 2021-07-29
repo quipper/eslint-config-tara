@@ -16,12 +16,6 @@ module.exports = {
     "import/extensions": "off",
     "import/no-unresolved": "off",
     'import/prefer-default-export': 'off',
-    "prettier/prettier": [
-      "error",
-      {
-        "printWidth": 120,
-      }
-    ]
   },
   "overrides": [
     {
@@ -36,7 +30,6 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:prettier/recommended",
     "prettier",
     "plugin:import/recommended",
     "plugin:import/typescript",
