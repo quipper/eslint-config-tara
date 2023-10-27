@@ -1,8 +1,8 @@
 module.exports = {
   extends: [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended-type-checked",
-    "plugin:@typescript-eslint/stylistic-type-checked",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/stylistic",
     "plugin:import/recommended",
     "plugin:import/typescript",
     "prettier",
@@ -19,6 +19,7 @@ module.exports = {
     "import/extensions": "off",
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off",
+    "no-void": "off",
   },
   overrides: [
     {
