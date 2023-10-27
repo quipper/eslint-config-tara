@@ -1,37 +1,32 @@
 module.exports = {
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module"
-  },
-  "plugins": [
-    "@typescript-eslint"
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "prettier",
   ],
-  "rules": {
+  rules: {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }],
-    'no-unused-vars': "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { vars: "all", args: "after-used", ignoreRestSiblings: true },
+    ],
+    "no-unused-vars": "off",
     "import/extensions": "off",
     "import/no-unresolved": "off",
-    'import/prefer-default-export': 'off',
+    "import/prefer-default-export": "off",
   },
-  "overrides": [
+  overrides: [
     {
-      files: ['**/*'],
-      excludedFiles: ['**/*.d.ts'],
+      files: ["**/*"],
+      excludedFiles: ["**/*.d.ts"],
       rules: {
-        'import/no-default-export': 'error',
+        "import/no-default-export": "error",
       },
     },
   ],
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "prettier",
-    "plugin:import/recommended",
-    "plugin:import/typescript",
-  ]
-}
+};

@@ -1,14 +1,14 @@
 {
   "name": "eslint-config-tara",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.24.0 || ^5.0.0",
-    "@typescript-eslint/parser": "^4.24.0 || ^5.0.0",
-    "eslint": "^7.27.0 || ^8.0.0",
-    "eslint-config-prettier": "^8.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.22.1",
-    "typescript": "^4.2.3"
+    "typescript": ">=4.3.5 <5.3.0"
   }
 }
