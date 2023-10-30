@@ -15,6 +15,7 @@ module.exports = {
       "error",
       { vars: "all", args: "after-used", ignoreRestSiblings: true },
     ],
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     "no-unused-vars": "off",
     "import/extensions": "off",
     "import/no-unresolved": "off",
